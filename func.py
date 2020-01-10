@@ -28,3 +28,21 @@ def adding(x=1, y=1):
 adding() #這會變2
 adding(5) # 這樣就是x=5, y=1 也就是6
 adding(y=5) #這樣就是x=1, y=5 也是6
+
+
+def good(x, y):
+	return x + y #就是把function 的執行結果"存下來" return就是他給出的結果
+#要有return 後面才能存成result
+result = good(3,4)
+print(result)
+print(good(3,5))
+result = good(5,100)
+print(result)
+
+def average(numbers):
+	return sum(numbers)/len(numbers) # 數字總和/多少個數字
+
+a = average([1, 2, 3])
+print(a)
+print(average([1, 2, 3])) #同樣都會印出平均值2
+print(average([65, 5645, 1000]))
